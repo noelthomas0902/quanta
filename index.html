@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quanta'22</title>
+    <style>
+      *{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  background-color: rgba(9, 9, 9, 0.875);
+  color: white;
+  position: relative;
+}
+
+.img-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.img{
+  width: min(100%, 595px);
+}
+
+.download{
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(87, 230, 240);
+  border: none;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <a target="_blank" href="https://drive.google.com/file/d/1LAVvUVn_NyIm8MbeWghwfQzjAq0mrzKO/view"><button class="download"><img src="/down.svg" alt=""></button></a>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
